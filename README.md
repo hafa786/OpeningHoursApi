@@ -1,0 +1,1 @@
+A simple python api for Formating the inputdata of diiferent restuarants openning or closing hour and convert it in human readable format. 
