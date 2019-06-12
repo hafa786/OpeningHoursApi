@@ -3,11 +3,11 @@ A simple python api for Formating the inputdata of diiferent restuarants opennin
 
 ## Part 1
 For making the required api we have used following stacks (according to requirements):
-``
+```
 Python 3.7.3,
 Flask 1.0.3,
 pip 19.1
-``
+```
 to install these, follow the install part.
 
 ### Install
@@ -93,3 +93,4 @@ A simple way to check the api, a simple postman application can be used or any o
 
 ## Part 2
 
+As a developer, i always love to have something challenging and never say that its tough but there is always have a chance to improve it. If i would be the data provider i would always make is as much simple as possible because it will be helpful for the future perspective. 
