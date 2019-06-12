@@ -1,48 +1,26 @@
 # the main api - having different api endpoints
-# from flask import Flask, request
-# from flask_restful import Resource, Api
-# from sqlalchemy import create_engine
-# from json import dumps
 
-
-
-# app = Flask(__name__)
-# api = Api(app)
-
-
-
-# class ApiCall(Resource):
-#     def post(self, employee_id):
-#         status = Processor.checkOpenOrClose();
-#         return [int(employee_id),status]
-        
-# api.add_resource(ApiCall, '/employees/<employee_id>') # Route_3
-
-
-# if __name__ == '__main__':
-#      app.run(port='5000')
-
-
-from flask import Flask, url_for , request
+from flask import Flask,request,jsonify
 from Processors import Processor
 
+# initializing the Flask app
 app = Flask(__name__)
-
-process = Processor();
+# initializing the processor class object
+processor = Processor();
 
         
 @app.route('/')
 def api_root():
     return 'Welcome'
 
-@app.route('/articles' , methods = ['POST'])
+@app.route('/openingHours' , methods = ['POST'])
 def api_articles():
-    if request.args['data'] != '':
+    if request.args['data'] != '' or request.args['data'] != {}:
         rough_data = request.args['data']
-        process.run(rough_data)
-        return "True"
+        result = processor.runner(rough_data)
+        return jsonify(result)
     else:
-        return "false"
+        return jsonify([])
 
 if __name__ == '__main__':
     app.run()
