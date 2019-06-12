@@ -101,6 +101,6 @@ For the testing purpose, i have taken three examples according to given requirem
 
 ## Part 2
 
-As a developer, i always love to have something challenging and never say that its tough but there is always have a chance to improve it. If i would be the data provider i would always make is as much simple as possible because it will be helpful for the future perspective. 
+As a developer, i always love to have something challenging and never say that its tough but there is always have a chance to improve it. If i would be the data provider i would always make is as much simple as possible because it will be helpful for the future perspective. I think, csv format is also one of the good options and its easy for management team and easy to import in various databases. These are just my thoughts about that it can be different. :) 
 
 Note: If i will have more time i can implement memory profiler: https://pypi.org/project/memory-profiler/ and make the resources clean after using it.
