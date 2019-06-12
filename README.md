@@ -25,7 +25,9 @@ It will run the api on localhost or https://127.0.0.1:5000 where 5000 is port nu
 
 A simple way to check the api, a simple postman application can be used or any other can be used which is comfortable for you.
 
-### Example
+### Examples 
+
+For the testing purpose, i have taken three examples according to given requirements and sample data:
 
 ```
 # -----------------------------Example 1--------------
@@ -35,6 +37,8 @@ A simple way to check the api, a simple postman application can be used or any o
 # data: {"monday" : [],"tuesday" : [{"type" : "open","value" : 36000},{"type" : "close","value" : 64800}],"wednesday" : [],"thursday" : [{"type" : "open","value" : 36000},{"type" : "close","value" : 64800}],"friday" : [{"type" :"open","value" : 36000}],"saturday" : [{"type" : "close","value" : 3600},
 {"type" : "open","value" : 36000}],"sunday" : [{"type" : "close","value" : 3600},{"type" : "open","value" : 43200
 },{"type" : "close","value" : 75600}]}
+# method: POST
+
 
 # Output
 
@@ -57,6 +61,8 @@ A simple way to check the api, a simple postman application can be used or any o
 # data: {"monday" : [],"tuesday" : [{"type" : "open","value" : 36000},{"type" : "close","value" : 64800}],"wednesday" : [],"thursday" : [{"type" : "open","value" : 36000},{"type" : "close","value" : 64800}],"friday" : [{"type" :"open","value" : 36000}],"saturday" : [{"type" : "close","value" : 3600},
 {"type" : "open","value" : 32400},{"type" : "close","value" : 39600},{"type" : "open","value" : 57600},{"type" : "close","value" : 82800}],"sunday" :[ {"type" : "open","value" : 43200
 },{"type" : "close","value" : 75600}]}
+# method: POST
+
 
 # Output
 [
@@ -76,6 +82,8 @@ A simple way to check the api, a simple postman application can be used or any o
 # api endpints : http://127.0.0.1:5000/openingHours
 # data: {"monday" : [{"type" : "open","value" : 28800},{"type" : "close","value" : 36000},{"type" : "open","value" : 39600},{"type" : "close","value" : 64800}],"tuesday" : [],"wednesday" : [{"type" : "open","value" : 39600},{"type" : "close","value" : 64800}],"thursday" : [{"type" : "open","value" : 39600},{"type" : "close","value" : 64800}],"friday" : [{"type" :"open","value" : 39600}],"saturday" : [{"type" : "close","value" : 75600},
 {"type" : "open","value" : 39600},{"type" : "close","value" : 75600}],"sunday" :[]}
+# method : POST
+
 
 # Output:
 [
@@ -94,3 +102,5 @@ A simple way to check the api, a simple postman application can be used or any o
 ## Part 2
 
 As a developer, i always love to have something challenging and never say that its tough but there is always have a chance to improve it. If i would be the data provider i would always make is as much simple as possible because it will be helpful for the future perspective. 
+
+Note: If i will have more time i can implement memory profiler: https://pypi.org/project/memory-profiler/ and make the resources clean after using it.
