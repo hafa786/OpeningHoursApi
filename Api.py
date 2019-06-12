@@ -17,7 +17,7 @@ def api_root():
 def api_articles():
     if request.args['data'] != '' or request.args['data'] != {}:
         rough_data = request.args['data']
-        result = processor.runner(rough_data)
+        result = processor.run(rough_data)
         return jsonify(result)
     else:
         return jsonify([])
