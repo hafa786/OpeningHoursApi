@@ -5,7 +5,9 @@ class Processor():
     def __init__(self):
         self.foo = []
     
-    # run the main functionality of the api    
+    # run the main functionality of the api
+    # params : json formate data
+    # return : human readable timing    
     def run(self,data):
         # initializing the number of days
         days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
@@ -34,6 +36,8 @@ class Processor():
         return result_value
     
     # function checking the closing hours in the day provided data
+    # params : data 
+    # return : true or false
     def checkClosingHours(self, datas):
         check = False
         for singledata in datas:
@@ -42,6 +46,8 @@ class Processor():
         return check
     
     # converting the given data in hours - human readable format
+    # params : data  - ({"type" : "open","value" : 28800},{"type" : "close","value" : 36000},{"type" : "open","value" : 39600},{"type" : "close","value" : 64800})
+    # return : convert data into human readable timing - (8 AM - 10 AM, 11 AM - 6 PM)
     def convertHours(self,data):
         # Initializing openingHours,closingHours and final_result lists
         final_result = []
